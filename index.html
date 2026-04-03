@@ -81,10 +81,15 @@
     <!-- Main Content -->
     <main class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         
-        <!-- Hero Section -->
+        <!-- Hero Section --> <div class="text-center mb-10">
+            <h2 class="text-1xl md:text-3xl font-bold text-slate-800 mb-2">
+DESIGNED BY ZACCY FOR COMRADES.  
+              <hr>
         <div class="text-center mb-10">
             <h2 class="text-3xl md:text-4xl font-bold text-slate-800 mb-3">
-                Summarize Engineering Lectures Instantly
+                Summarize Engineering,Business or any unit course Lectures Instantly
+                <hr>
+                
             </h2>
             <p class="text-slate-600 max-w-2xl mx-auto text-lg">
                 Transform lengthy Microprocessor, Control Systems, and Instrumentation notes into concise, exam-ready study materials. 
@@ -138,7 +143,7 @@
             <!-- API Key Input (for HuggingFace) -->
             <div class="bg-slate-50 rounded-lg p-4 border border-slate-200">
                 <label class="block text-sm font-medium text-slate-700 mb-2">
-                    HuggingFace API Key (Free)
+                   Zaccy's HuggingFace API Key (Free)
                     <span class="text-xs text-slate-500 font-normal ml-2">- Get yours at huggingface.co/settings/tokens</span>
                 </label>
                 <input type="password" id="apiKey" placeholder="hf_xxxxxxxxxxxxxxxxxxxxxxxx" 
@@ -333,7 +338,7 @@
             const apiKey = document.getElementById('apiKey').value;
             
             if (!apiKey) {
-                alert('Please enter your HuggingFace API key first.\nGet one free at huggingface.co/settings/tokens');
+                alert('Please enter zaccy HuggingFace API key first.\nGet one free at huggingface.co/settings/tokens');
                 return;
             }
 
@@ -543,7 +548,9 @@
             // Header
             doc.setFontSize(20);
             doc.setTextColor(102, 126, 234);
-            doc.text('Engineering Lecture Summary', 20, 20);
+            doc.text('Lecture Summary', 20, 20);
+                        doc.text('designed by Zaccy for comrades', 20, 20);
+
             
             doc.setFontSize(12);
             doc.setTextColor(100, 100, 100);
@@ -587,6 +594,7 @@
             }
         });
     </script>
-<script src="https://deepsite.hf.co/deepsite-badge.js"></script>
+    <script src="https://github.com/zaccmunuhe7-byte"></script>
+
 </body>
 </html>
